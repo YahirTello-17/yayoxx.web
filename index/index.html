@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAYOXX - Tienda en Línea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2f2f2f; /* Fondo gris oscuro */
+            color: white; /* Texto blanco */
+        }
+        header {
+            background-color: #1e1e1e; /* Fondo negro */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 15px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .navbar a {
+            margin: 0 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #ddd; /* Gris claro */
+        }
+        .navbar a:hover {
+            color: white;
+        }
+
+        /* Estilo para el banner */
+        .banner {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .banner img {
+            width: 100%;  /* Hace que el banner ocupe todo el ancho disponible */
+            height: auto;  /* Mantiene la proporción de la imagen */
+        }
+
+        /* Estilo para la marquesina */
+        .marquesina {
+            width: 100%; /* Ancho completo */
+            overflow: hidden; /* Oculta cualquier texto que se desborde */
+            background-color: #1e1e1e; /* Fondo oscuro */
+            color: #e7e7e7; /* Color del texto en naranja */
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .marquesina p {
+            display: inline-block;
+            white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+            animation: desplazamiento 10s linear infinite; /* Tiempo de desplazamiento ajustable */
+        }
+
+        @keyframes desplazamiento {
+            from {
+                transform: translateX(100%); /* Empieza desde la derecha */
+            }
+            to {
+                transform: translateX(-100%); /* Termina fuera de la pantalla a la izquierda */
+            }
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #333; /* Fondo gris más oscuro */
+        }
+        .product-card {
+            background-color: #444; /* Fondo gris medio */
+            border-radius: 8px;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            text-align: center;
+            padding: 15px;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            color: white;
+        }
+        .product-card p {
+            color: #bbb; /* Gris más claro */
+            font-size: 14px;
+        }
+        .product-card .price {
+            font-size: 18px;
+            color: #e67e22; /* Color naranja */
+            font-weight: bold;
+        }
+        footer {
+            background-color: #1e1e1e; /* Fondo negro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Estilo para el video */
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 80%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>YAYOXX</h1>
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/index/CARRITO.HTML">Carrito</a>
+            <a href="http://127.0.0.1:5500/index/CUENTA.HTML">Cuenta</a>
+            <a href="http://127.0.0.1:5500/index/OFERTAS.HTML">Ofertas</a>
+            <a href="http://127.0.0.1:5500/index/VISITAS.HTML">Visítanos</a> <!-- Enlace a la página Visítanos -->
+        </nav>
+    </header>
+
+    <!-- Banner Image Below the Navbar -->
+    <div class="banner">
+        <img src="Banner Revista de Moda Elegante Negro (1920 x 80 px).png" alt="Banner de YAYOXX"> <!-- Cambia la URL a tu imagen de banner -->
+    </div>
+
+    <!-- Video de YouTube -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ez2wJnlwag?si=hKvwZva545vSFMFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- Marquesina (Texto Desplazable) -->
+    <div class="marquesina">
+        <p>¡Bienvenido a YAYOXX! ¡Las mejores ofertas y productos exclusivos solo para ti!</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/producto1.html"> 
+                <img src="GO.jpg" alt="Producto 1">
+                <h3>GORRA DANDY HATS X FUERZA REGIDA</h3>
+                <p>GORRA DANDY HATS CON COLABORACION CON FUERZA REGIDA.</p>
+                <p class="price">$4,599.00</p>
+            </a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/producto2.html">
+                <img src="TE.jpg" alt="Producto 2">
+                <h3>AMIRI SKELETON</h3>
+                <p>TENIS AMIRI SKELETON DE LA MEJOR CALIDAD</p>
+                <p class="price">$2,329.00</p>
+            </a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO3.HTML">
+                <img src="SUDA.jpg" alt="Producto 3">
+                <h3>HOODIE DENIM TEARS</h3>
+                <p>SUDADERA HOODIE DENIM TEARS calidad unica</p>
+                <p class="price">$899.00</p>
+            </a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO4.HTML">
+                <img src="pe.jpg" alt="Producto 4">
+                <h3>PERFUME DIOR SAUVAGE</h3>
+                <p>PERFUME DIOR SAUVAGE NUEVO Y ORIGINAL</p>
+                <p class="price">$4,599.99</p>
+            </a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO5.HTML">
+                <img src="S8ffba68c4ab54edf936eae67b2c6f0a7a.jpg" alt="Producto 5">
+                <h3>BLAST SUDADERA BIG ORANGE</h3>
+                <p>SUDADERA BLAST SUDADERA BIG ORANGE estilo clásico</p>
+                <p class="price">$1,299.00</p>
+            </a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO6.HTML">
+                <img src="LENTES.jpg" alt="Producto 6">
+                <h3>LENTES DE SOL Off-White</h3>
+                <p>LENTES DE SOL Off-White edición limitada</p>
+                <p class="price">$899.00</p>
+            </a>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO7.HTML">
+                <img src="SOCIAL.jpg" alt="Producto 7">
+                <h3>PLAYERA ANTI SOCIAL SOCIAL CLUB</h3>
+                <p>PLAYERA ANTI SOCIAL SOCIAL CLUB DE LA MEJOR CALIDAD QUE PUEDAS ENCONTRAR</p>
+                <p class="price">$629.99</p>
+            </a>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO8.HTML">
+                <img src="PA.png" alt="Producto 8">
+                <h3>PLAYERA Palm Angels</h3>
+                <p> PLAYERA Palm Angels DE EXCELENTE CALIDAD ,</p>
+                <p class="price">$999.99</p>
+            </a>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/producto9.html">
+                <img src="SH.jpg" alt="Producto 9">
+                <h3>SHORTS TIPO LOUIS VUITTON</h3>
+                <p>SHORTS TIPO LOUIS VUITTON DE LA MEJOR CALIDAD</p>
+                <p class="price">$659.99</p>
+            </a>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO10.HTML">
+                <img src="OW.jpg" alt="Producto 10">
+                <h3>SUDADERA Off-White Autumn and Winter 2023</h3>
+                <p>SUDADERA Off-White Autumn and Winter 2023 Precio habitual</p>
+                <p class="price">$1,499.00</p>
+            </a>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO11.HTML">
+                <img src="YE.jpg" alt="Producto 11">
+                <h3>YEEZY FOAM RNNR</h3>
+                <p>Par de YEEZY FOAM RNNR</p>
+                <p class="price">$779.99</p>
+            </a>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card">
+            <a href="http://127.0.0.1:5500/index/PRODUCTO12.HTML">
+                <img src="CA.jpg" alt="Producto 12">
+                <h3>PLAYERA CALIFORNIA</h3>
+                <p>PLAYERA CALIFORNIA original, diseño único</p>
+                <p class="price">$449.99</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 YAYOXX. Todos los derechos reservados.</p>
+        <p>Contacto: Luis Yahir Tello Baca</p>
+        <p>Ciudad: Delicias</p>
+        <p>Teléfono: 6142802319</p>
+        <p>Correo: yahirtello45@.com</p>
+    </footer>
+</body>
+</html>
